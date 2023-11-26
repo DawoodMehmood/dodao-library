@@ -1,0 +1,14 @@
+$dark-color: #1d1c1c;
+
+@mixin page-centered(){
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.centeredText{
+    @include page-centered();
+    font-weight: 900;
+    font-size: larger;
+}
