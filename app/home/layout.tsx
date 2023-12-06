@@ -8,15 +8,11 @@ export default function HomeLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const [role, setRole] = useState(""); 
+  const [role, setRole] = useState("");
 
   const handleLogin = (selectedRole: string) => {
-    setRole(selectedRole); 
+    setRole(selectedRole);
   };
-
-  useEffect(() => {
-    setRole("");
-  }, []);
 
   return (
     <BookProvider>

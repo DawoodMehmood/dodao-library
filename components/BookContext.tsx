@@ -26,7 +26,7 @@ export const BookProvider: React.FC = ({ children }) => {
 
   const fetchBooks = async () => {
     try {
-      const response = await fetch('/api/retrieveAllBooks');
+      const response = await fetch("/api/retrieveAllBooks");
       if (response.ok) {
         const data = await response.json();
         setBooks(data.books);
